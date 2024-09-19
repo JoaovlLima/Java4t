@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         int opcao;
-        boolean rodando = true;
-   while(rodando) {
+       
+   while(opcao!=6) {
         System.out.println("Calculadora Avançada");
         System.out.println("-----Escolha a Operação------- \n"+
         "1 - Soma\n"+
@@ -36,7 +36,7 @@ public class Main {
                 break;
                 case 5:
                 System.out.println("Saindo .....");
-                rodando = false;
+             
                  break;
             default:
             System.out.println("Opção inválida. Tente novamente.");
@@ -106,7 +106,7 @@ public class Main {
             System.out.println("ERRO: Ocorreu um erro inesperado.");
         } finally {
             System.out.print("Pressione Enter para continuar ");
-            scanner.nextLine(); // Limpa o buffer do scanner
+            scanner.nextLine(); 
         }
     }
     

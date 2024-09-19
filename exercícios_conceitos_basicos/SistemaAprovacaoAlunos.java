@@ -27,6 +27,10 @@ public class SistemaAprovacaoAlunos {
             mensagemAcimaNove = "Adicionado 10% a sua nota";
         }
 
+        if (media > 10){
+            media = 10;
+        }
+
        
         String status;
         if (media >= 7) {
