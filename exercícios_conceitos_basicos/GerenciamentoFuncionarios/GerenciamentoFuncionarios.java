@@ -9,6 +9,7 @@ public class GerenciamentoFuncionarios {
         int opcao;
 
         do {
+            
             System.out.println("\n--- Menu ---");
             System.out.println("1. Adicionar Funcionário");
             System.out.println("2. Remover Funcionário");
@@ -20,6 +21,7 @@ public class GerenciamentoFuncionarios {
             scanner.nextLine(); 
 
             switch (opcao) {
+        
                 case 1:
                     adicionarFuncionario();
                     break;
