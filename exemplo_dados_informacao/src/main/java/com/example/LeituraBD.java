@@ -11,7 +11,7 @@ public class LeituraBD {
         try {
             Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM usuarios");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM clientes");
 
 
             while (rs.next()) {

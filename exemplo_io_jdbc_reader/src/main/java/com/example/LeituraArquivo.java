@@ -7,8 +7,11 @@ import java.io.IOException;
 
 
 public class LeituraArquivo {
-    public void teste() {
-        try (BufferedReader br = new BufferedReader(new FileReader("dados.txt"))) {
+    public static void main(String[] args) {
+   
+    // public void teste() {
+        String src_file = "C:\\Users\\DevTarde\\Documents\\joaoLima\\Java4t/dados.txt";
+        try (BufferedReader br = new BufferedReader(new FileReader(src_file))) {
             String linha;
             while ((linha = br.readLine()) != null) {
                 System.out.println(linha);
@@ -16,5 +19,6 @@ public class LeituraArquivo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    // }
+}
 }

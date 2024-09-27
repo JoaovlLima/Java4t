@@ -5,7 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class LeituraCSV {
-    public void teste() {
+    public static void main(String[] args) {
+    // public void teste() {
         String arquivoCSV = "dados.csv";
         String linha = "";
         String divisor = ","; // O divisor usado no CSV, neste caso é a vírgula
@@ -16,7 +17,7 @@ public class LeituraCSV {
                 String[] colunas = linha.split(divisor);
                 System.out.println("Cabeçalho:");
                 for (String coluna : colunas) {
-                    System.out.print(coluna + " ");
+                    System.out.print(coluna + " | ");
                 }
                 System.out.println("\n---------------------------");
             }
@@ -26,7 +27,7 @@ public class LeituraCSV {
             while ((linha = br.readLine()) != null) {
                 String[] valores = linha.split(divisor);
                 for (String valor : valores) {
-                    System.out.print(valor + " ");
+                    System.out.print(valor + " | ");
                 }
                 System.out.println();
             }
